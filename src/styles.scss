@@ -1,1 +1,52 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'common';
+
+html,
+body {
+  background: $white-color;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.margo-label {
+  background: $blue-margo;
+  border-radius: 15px;
+  color: $white-color;
+  padding: 3px 12px;
+  margin-right: 5px;
+}
+
+.margo-button {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  min-width: 85px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+@each $name, $color in $color-map {
+  .margo-button-#{$name} {
+    color: $white-color;
+    background-color: $color;
+    border-color: $color;
+
+    &:hover {
+      background-color: darken($color, 10%);
+      border-color: darken($color, 10%);
+    }
+  }
+}

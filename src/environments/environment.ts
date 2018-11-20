@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  endPoint: 'https://api.betaseries.com/',
+  search: {
+    movie: 'movies/search',
+    show: 'shows/search'
+  }
 };
 
 /*

@@ -1,0 +1,52 @@
+@import 'common';
+
+.search {
+  background: $white-color;
+  padding: 4px;
+  border-radius: 4px;
+  margin: 10px auto;
+  width: 90%;
+
+  input {
+    background: $white-color;
+    border: none;
+    width: calc(100% - 20px);
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .icon {
+    color: $blue-margo;
+    text-align: center;
+    width: 20px;
+  }
+}
+
+.link {
+  align-items: center;
+  display: flex;
+  color: $white-color;
+  cursor: pointer;
+  height: 50px;
+  width: 100%;
+  outline: none;
+
+  &.active {
+    background: $white-color;
+    color: $blue-margo;
+  }
+
+  .icon {
+    color: inherit;
+    text-align: center;
+    width: 60px;
+  }
+
+  .label {
+    color: inherit;
+    flex: 1;
+    text-decoration: none;
+  }
+}

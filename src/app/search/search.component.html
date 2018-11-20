@@ -1,0 +1,6 @@
+<div class="result" *ngIf="shows">
+  <app-media *ngFor="let show of shows.shows" [media]="show"></app-media>
+</div>
+<div class="result" *ngIf="movies">
+  <app-media *ngFor="let movie of movies.movies" [media]="movie"></app-media>
+</div>

@@ -1,0 +1,12 @@
+<div class="poster">
+  <img [src]="media.poster">
+</div>
+<div class="details">
+  <div class="title"><span class="fas fa-{{media.getIconType()}}"></span> {{media.title}}</div>
+  <div class="genre"><span margoLabel *ngFor="let genre of media.genres">{{genre}}</span></div>
+  <div class="description">{{media.resume}}</div>
+</div>
+<div class="actions">
+  <button margoButton><span class="fas fa-plus"></span> Add</button>
+  <button margoButton [color]="'red'"><span class="fas fa-trash"></span> Remove</button>
+</div>

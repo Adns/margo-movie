@@ -1,0 +1,8 @@
+<div class="search">
+  <input title="input search" [(ngModel)]="criteria" (keyup.enter)="search()"/>
+  <span class="icon fas fa-search"></span>
+</div>
+<div class="link" *ngFor="let link of links" [routerLink]="link.route" (click)="setActive(link)" [ngClass]="link.active ? 'active' : ''">
+  <span class="icon fas {{link.icon}}"></span>
+  <span class="label">{{link.label}}</span>
+</div>
