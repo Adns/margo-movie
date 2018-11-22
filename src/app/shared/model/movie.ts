@@ -15,8 +15,11 @@ export class Movies extends Result implements Deserializable {
 
 export class Movie extends Media {
 
+  director: string;
+
   constructor() {
     super();
+    this.director = null;
   }
 
   deserialize(input: Movie): this {
@@ -24,6 +27,10 @@ export class Movie extends Media {
     this.resume = input['synopsis'];
 
     return this;
+  }
+
+  getType(): string {
+    return 'movie';
   }
 
   getIconType(): string {

@@ -5,12 +5,16 @@ import {ShowComponent} from './show/show.component';
 import {LabelDirective} from './directives/label.directive';
 import {ButtonDirective} from './directives/button.directive';
 import {MediaComponent} from './media/media.component';
+import {RouterModule} from '@angular/router';
+import { AutoUnsubscribeComponent } from './auto-unsubscribe/auto-unsubscribe.component';
+import { BlockComponent } from './block/block.component';
 
 @NgModule({
-  declarations: [MovieComponent, ShowComponent, LabelDirective, ButtonDirective, MediaComponent],
-  exports: [MovieComponent, ShowComponent, LabelDirective, ButtonDirective, MediaComponent],
+  declarations: [MovieComponent, ShowComponent, LabelDirective, ButtonDirective, MediaComponent, AutoUnsubscribeComponent, BlockComponent],
+  exports: [MovieComponent, ShowComponent, LabelDirective, ButtonDirective, MediaComponent, BlockComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ]
 })
 export class SharedModule {

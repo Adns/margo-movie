@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Media} from '../../core/model/media';
+import {Media} from '../model/media';
 
 @Component({
   selector: 'app-media',

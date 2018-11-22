@@ -1,12 +1,14 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {MoviesComponent} from './view/movies/movies.component';
-import {ShowsComponent} from './view/shows/shows.component';
 import {SearchComponent} from './search/search.component';
+import {MovieFullComponent} from './view/movie-full/movie-full.component';
+import {ShowFullComponent} from './view/show-full/show-full.component';
+import {MediasComponent} from './user/medias/medias.component';
 
 const routes: Routes = [
-  {path: 'movies', component: MoviesComponent},
-  {path: 'shows', component: ShowsComponent},
+  {path: 'user', component: MediasComponent},
+  {path: 'movie/:id', component: MovieFullComponent},
+  {path: 'show/:id', component: ShowFullComponent},
   {path: 'search', component: SearchComponent}
 ];
 

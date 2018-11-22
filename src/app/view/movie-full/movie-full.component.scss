@@ -1,0 +1,44 @@
+@import 'common';
+
+:host {
+  display: block;
+  height: 100%;
+  padding: 24px;
+}
+
+.media {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+
+  .image {
+    img {
+      margin-right: 24px;
+      width: 300px;
+    }
+  }
+
+  .info {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .key {
+      color: $blue-margo;
+      font-weight: bold;
+    }
+
+    .title {
+      color: $blue-margo;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .resume {
+      color: $blue-light;
+      max-height: 150px;
+      overflow-y: auto;
+    }
+  }
+}

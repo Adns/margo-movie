@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Show} from '../../core/model/show';
+import {Show} from '../model/show';
 
 @Component({
   selector: 'app-show',
@@ -11,7 +11,8 @@ export class ShowComponent implements OnInit {
   @Input()
   show: Show;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

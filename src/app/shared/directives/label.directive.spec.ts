@@ -1,4 +1,4 @@
-import { LabelDirective } from './label.directive';
+import {LabelDirective} from './label.directive';
 
 describe('LabelDirective', () => {
   it('should create an instance', () => {

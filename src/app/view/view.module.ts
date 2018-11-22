@@ -1,12 +1,16 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { MoviesComponent } from './movies/movies.component';
-import { ShowsComponent } from './shows/shows.component';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {MovieFullComponent} from './movie-full/movie-full.component';
+import {ShowFullComponent} from './show-full/show-full.component';
+import {SharedModule} from '../shared/shared.module';
+import {PicturesComponent} from './pictures/pictures.component';
 
 @NgModule({
-  declarations: [MoviesComponent, ShowsComponent],
+  declarations: [MovieFullComponent, ShowFullComponent, PicturesComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ]
 })
-export class ViewModule { }
+export class ViewModule {
+}

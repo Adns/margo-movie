@@ -8,6 +8,17 @@ export const environment = {
   search: {
     movie: 'movies/search',
     show: 'shows/search'
+  },
+  info: {
+    show: 'shows/display',
+    movie: 'movies/movie'
+  },
+  pictures: {
+    show: 'shows/pictures'
+  },
+  user: {
+    movies: 'movies/random',
+    shows: 'shows/random'
   }
 };
 

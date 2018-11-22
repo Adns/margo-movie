@@ -1,9 +1,9 @@
 import {Injectable} from '@angular/core';
 import {ApiService} from '../../core/services/api.service';
 import {Observable} from 'rxjs/index';
-import {Shows} from '../../core/model/show';
+import {Shows} from '../../shared/model/show';
 import {environment} from '../../../environments/environment';
-import {Movies} from '../../core/model/movie';
+import {Movies} from '../../shared/model/movie';
 import {map} from 'rxjs/internal/operators';
 
 @Injectable({

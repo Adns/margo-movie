@@ -1,0 +1,14 @@
+@import 'common';
+
+:host {
+  display: block;
+  padding: 24px;
+}
+
+.title {
+  color: $blue-margo;
+}
+
+.user-media {
+  margin: 20px auto;
+}

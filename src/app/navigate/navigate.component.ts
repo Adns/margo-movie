@@ -12,8 +12,8 @@ export class NavigateComponent implements OnInit {
   criteria = '';
 
   links = [
-    {label: 'My Movies', icon: 'fa-film', route: 'movies', active: false},
-    {label: 'My Tv Shows', icon: 'fa-tv', route: 'shows', active: false}
+    {label: 'My Movies', icon: 'fa-film', route: '/user', queryParams: {type: 'movies'}, active: false},
+    {label: 'My Tv Shows', icon: 'fa-tv', route: '/user', queryParams: {type: 'shows'}, active: false}
   ];
 
   constructor(private router: Router) {

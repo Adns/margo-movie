@@ -1,0 +1,5 @@
+<h1 class="title">User {{title}}</h1>
+<div class="user-media" *ngFor="let media of medias$ | async">
+  <app-media [media]="media"></app-media>
+</div>
+

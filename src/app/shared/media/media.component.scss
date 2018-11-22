@@ -1,18 +1,15 @@
 @import 'common';
 
-:host {
+.container {
   align-items: center;
-  background: $blue-background;
-  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
   display: flex;
-  height: 200px;
-  padding: 6px;
   position: relative;
-  margin-top: 10px;
+  height: 200px;
 
   .poster {
     margin: 10px;
-    width: 100px;
+    width: 150px;
 
     img {
       width: 100%;
@@ -45,15 +42,6 @@
       font-style: italic;
       flex: 1;
     }
-  }
-
-  .actions {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 10px;
-    width: 90px;
   }
 
   .icon {

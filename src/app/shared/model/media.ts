@@ -10,6 +10,7 @@ export abstract class Media implements Deserializable {
   notes: Note;
   poster: string;
   creation: string;
+  followers: number;
 
   constructor() {
     this.id = null;
@@ -20,6 +21,7 @@ export abstract class Media implements Deserializable {
     this.notes = null;
     this.poster = null;
     this.creation = null;
+    this.followers = null;
   }
 
   deserialize(input: any): this {
@@ -29,6 +31,8 @@ export abstract class Media implements Deserializable {
   }
 
   abstract getIconType(): string;
+
+  abstract getType(): string;
 
 }
 

@@ -1,0 +1,11 @@
+:host {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  img {
+    margin: 10px;
+    width: 150px;
+  }
+}

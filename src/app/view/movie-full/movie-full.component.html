@@ -1,0 +1,15 @@
+<app-block *ngIf="movie">
+  <div class="media">
+    <div class="image"><img [src]="movie.poster"></div>
+    <div class="info">
+      <div class="title">{{movie.title}}</div>
+      <div class="note"><span class="key">Note: </span>{{movie.notes.mean | number: '1.0-1'}} ({{movie.notes.total}}
+        votes)
+      </div>
+      <div class="director"><span class="key">Director: </span>{{movie.director}}</div>
+      <div class="followers"><span class="key">Followers: </span>{{movie.followers}}</div>
+      <div class="genres"><span margoLabel *ngFor="let genre of movie.genres">{{genre}}</span></div>
+      <div class="resume">{{movie.resume}}</div>
+    </div>
+  </div>
+</app-block>
