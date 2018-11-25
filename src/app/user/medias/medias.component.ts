@@ -4,7 +4,7 @@ import {ActivatedRoute} from '@angular/router';
 import {AutoUnsubscribeComponent} from '../../shared/auto-unsubscribe/auto-unsubscribe.component';
 import {takeUntil} from 'rxjs/internal/operators';
 import {Media} from '../../shared/model/media';
-import {Observable} from 'rxjs/index';
+import {Observable} from 'rxjs';
 
 @Component({
   selector: 'app-medias',
@@ -21,7 +21,7 @@ export class MediasComponent extends AutoUnsubscribeComponent implements OnInit 
   }
 
   ngOnInit() {
-    this.route.queryParams.pipe(takeUntil(this.close)).subscribe(params => {
+    this.route.params.pipe(takeUntil(this.close)).subscribe(params => {
       const type = params.type;
       this.title = type === 'movies' ? 'Movies' : 'Shows';
       this.medias$ = type === 'movies' ? this.userService.getUserMovies() : this.userService.getUserShows();

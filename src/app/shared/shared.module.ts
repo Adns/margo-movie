@@ -6,12 +6,30 @@ import {LabelDirective} from './directives/label.directive';
 import {ButtonDirective} from './directives/button.directive';
 import {MediaComponent} from './media/media.component';
 import {RouterModule} from '@angular/router';
-import { AutoUnsubscribeComponent } from './auto-unsubscribe/auto-unsubscribe.component';
-import { BlockComponent } from './block/block.component';
+import {AutoUnsubscribeComponent} from './auto-unsubscribe/auto-unsubscribe.component';
+import {BlockComponent} from './block/block.component';
+import {LoaderComponent} from './loader/loader.component';
 
 @NgModule({
-  declarations: [MovieComponent, ShowComponent, LabelDirective, ButtonDirective, MediaComponent, AutoUnsubscribeComponent, BlockComponent],
-  exports: [MovieComponent, ShowComponent, LabelDirective, ButtonDirective, MediaComponent, BlockComponent],
+  declarations: [
+    MovieComponent,
+    ShowComponent,
+    LabelDirective,
+    ButtonDirective,
+    MediaComponent,
+    AutoUnsubscribeComponent,
+    BlockComponent,
+    LoaderComponent
+  ],
+  exports: [
+    MovieComponent,
+    ShowComponent,
+    LabelDirective,
+    ButtonDirective,
+    MediaComponent,
+    BlockComponent,
+    LoaderComponent
+  ],
   imports: [
     CommonModule,
     RouterModule

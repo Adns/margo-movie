@@ -4,22 +4,20 @@ import {NgModule} from '@angular/core';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {CoreModule} from './core/core.module';
-import {SearchModule} from './search/search.module';
 import {NavigateModule} from './navigate/navigate.module';
-import {ViewModule} from './view/view.module';
-import {UserModule} from './user/user.module';
+import {WelcomeComponent} from './welcome/welcome.component';
+import {SharedModule} from './shared/shared.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
     CoreModule,
-    SearchModule,
+    SharedModule,
     NavigateModule,
-    ViewModule,
-    UserModule,
     AppRoutingModule
   ],
   providers: [],

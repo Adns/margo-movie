@@ -1,7 +1,7 @@
 <app-block>
-  <div class="container" [routerLink]="'/' + media.getType() + '/' + media.id">
+  <div class="container" [routerLink]="'/view/' + media.getType() + '/' + media.id">
     <div class="poster">
-      <img [src]="media.poster">
+      <img [src]="media.poster" *ngIf="media.poster">
     </div>
     <div class="details">
       <div class="title"><span class="fas fa-{{media.getIconType()}}"></span> {{media.title}}</div>
