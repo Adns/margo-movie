@@ -4,7 +4,11 @@
       <img [src]="media.poster" *ngIf="media.poster">
     </div>
     <div class="details">
-      <div class="title"><span class="fas fa-{{media.getIconType()}}"></span> {{media.title}}</div>
+      <div class="title">
+        <span class="fas fa-{{media.getIconType()}}"></span>
+        {{media.title}}
+        <app-note [note]="media.notes.mean"></app-note>
+      </div>
       <div class="genre"><span margoLabel *ngFor="let genre of media.genres">{{genre}}</span></div>
       <div class="description">{{media.resume}}</div>
     </div>

@@ -9,15 +9,20 @@ import {WelcomeComponent} from './welcome/welcome.component';
 import {SharedModule} from './shared/shared.module';
 import {HTTP_INTERCEPTORS} from '@angular/common/http';
 import {HttpInterceptorService} from './core/interceptors/http-interceptor.service';
+import {BestShowsComponent} from './best-shows/best-shows.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    BestShowsComponent
   ],
   imports: [
     BrowserModule,
     CoreModule,
+    FormsModule,
+    ReactiveFormsModule,
     SharedModule,
     NavigateModule,
     AppRoutingModule

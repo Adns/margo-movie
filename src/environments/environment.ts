@@ -23,6 +23,9 @@ export const environment = {
   episode: {
     shows: 'shows/episodes'
   },
+  best: {
+    shows: 'shows/list'
+  },
   comment: 'comments/comments'
 };
 

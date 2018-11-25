@@ -1,1 +1,10 @@
-<app-loader></app-loader>
+<div class="header">
+  <div class="title">Most {{selectedItem.label}}</div>
+  <div class="selector">
+    <label for="show-selector">Most: </label>
+    <select id="show-selector" (change)="change($event)">
+      <option *ngFor="let item of items" [value]="item.value" [selected]="item.value === selectedItem.value">{{item.label}}</option>
+    </select>
+  </div>
+</div>
+<app-best-shows [limit]="10" [type]="selectedItem.value"></app-best-shows>

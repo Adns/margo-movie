@@ -1,0 +1,14 @@
+@import 'common';
+
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  .title {
+    color: $blue-margo;
+    font-size: 24px;
+    font-weight: bold;
+  }
+}

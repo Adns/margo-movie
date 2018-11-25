@@ -9,6 +9,8 @@ import {RouterModule} from '@angular/router';
 import {AutoUnsubscribeComponent} from './auto-unsubscribe/auto-unsubscribe.component';
 import {BlockComponent} from './block/block.component';
 import {LoaderComponent} from './loader/loader.component';
+import {NotePipe} from './pipes/note.pipe';
+import {NoteComponent} from './note/note.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import {LoaderComponent} from './loader/loader.component';
     MediaComponent,
     AutoUnsubscribeComponent,
     BlockComponent,
-    LoaderComponent
+    LoaderComponent,
+    NotePipe,
+    NoteComponent
   ],
   exports: [
     MovieComponent,
@@ -28,7 +32,9 @@ import {LoaderComponent} from './loader/loader.component';
     ButtonDirective,
     MediaComponent,
     BlockComponent,
-    LoaderComponent
+    LoaderComponent,
+    NotePipe,
+    NoteComponent
   ],
   imports: [
     CommonModule,

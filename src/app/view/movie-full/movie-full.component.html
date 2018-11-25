@@ -3,7 +3,7 @@
     <div class="media">
       <div class="image"><img [src]="movie.poster"></div>
       <div class="info">
-        <div class="title">{{movie.title}}</div>
+        <div class="title">{{movie.title}} <app-note [note]="movie.notes.mean"></app-note></div>
         <div class="note"><span class="key">Note: </span>{{movie.notes.mean | number: '1.0-1'}} ({{movie.notes.total}}
           votes)
         </div>

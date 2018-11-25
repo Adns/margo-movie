@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-welcome',
@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WelcomeComponent implements OnInit {
 
-  constructor() { }
+  items = [
+    {label: 'Popular', value: 'popularity'},
+    {label: 'Followed', value: 'followers'}
+  ];
+
+  selectedItem = this.items[0];
+
+  constructor() {
+  }
 
   ngOnInit() {
+  }
+
+  change(event: Event): void {
+    this.selectedItem = this.items.find(e => e.value === event.target['value']);
   }
 
 }

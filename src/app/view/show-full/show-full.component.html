@@ -3,10 +3,7 @@
   <div class="media">
     <div class="image"><img [src]="show.poster"></div>
     <div class="info">
-      <div class="title">{{show.title}}</div>
-      <div class="note"><span class="key">Note: </span>{{show.notes.mean | number: '1.0-1'}} ({{show.notes.total}}
-        votes)
-      </div>
+      <div class="title">{{show.title}} <app-note [note]="show.notes.mean"></app-note></div>
       <div class="followers"><span class="key">Followers: </span>{{show.followers}}</div>
       <div class="genres"><span margoLabel *ngFor="let genre of show.genres">{{genre}}</span></div>
       <div class="network"><span class="key">Network: </span>{{show.network}}</div>
@@ -19,15 +16,15 @@
   </div>
   </app-block>
 
-  <app-block [blockTitle]="'Season Details'" *ngIf="episodes"  class="margin-block">
+  <app-block [blockTitle]="'Season Details'" *ngIf="episodes">
     <app-season-detail [episodes]="episodes" (episodeWatched)="watchEpisode($event)"></app-season-detail>
   </app-block>
 
-  <app-block [blockTitle]="'Pictures'" class="margin-block">
+  <app-block [blockTitle]="'Pictures'">
     <app-pictures [id]="show.id"></app-pictures>
   </app-block>
 
-  <app-block [blockTitle]="'Comments'" class="margin-block">
+  <app-block [blockTitle]="'Comments'">
     <app-comments [id]="show.id" [type]="'show'"></app-comments>
   </app-block>
 </ng-container>
