@@ -1,3 +1,4 @@
+<app-loader *ngIf="!shows && !movies"></app-loader>
 <div class="result" *ngIf="shows">
   <app-media *ngFor="let show of shows.shows" [media]="show"></app-media>
 </div>
