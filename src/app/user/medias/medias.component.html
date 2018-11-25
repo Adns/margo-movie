@@ -1,5 +1,5 @@
 <ng-container *ngIf="medias$ | async as medias; else loading">
-  <h1 class="title">User {{title}}</h1>
+  <h1 class="title">User's {{title}}</h1>
   <div class="user-media" *ngFor="let media of medias">
     <app-media [media]="media"></app-media>
   </div>

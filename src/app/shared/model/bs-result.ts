@@ -1,4 +1,4 @@
-export class Result {
+export class BsResult {
   errors: Error[];
 
   constructor(obj?: any) {

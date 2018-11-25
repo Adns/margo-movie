@@ -1,8 +1,8 @@
-import {Result} from './result';
+import {BsResult} from './bs-result';
 import {Deserializable} from './deserializable';
 import {Media} from './media';
 
-export class Movies extends Result implements Deserializable {
+export class Movies extends BsResult implements Deserializable {
   movies: Movie[];
 
   deserialize(input: Movies): this {

@@ -1,7 +1,7 @@
-import {Result} from './result';
+import {BsResult} from './bs-result';
 import {Deserializable} from './deserializable';
 
-export class Pictures extends Result implements Deserializable {
+export class Pictures extends BsResult implements Deserializable {
   pictures: Picture[];
 
   deserialize(input: Pictures): this {

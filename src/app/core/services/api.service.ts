@@ -25,6 +25,6 @@ export class ApiService {
 
   get<T>(path: string, params?: { [key: string]: string | number }): Observable<T> {
     const url = ApiService.buildUrl(path, params);
-    return this.http.get<T>(url, {headers: {'X-BetaSeries-Key': 'f93c137ff1b0'}});
+    return this.http.get<T>(url);
   }
 }
