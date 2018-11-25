@@ -22,7 +22,8 @@ export const environment = {
   },
   episode: {
     shows: 'shows/episodes'
-  }
+  },
+  comment: 'comments/comments'
 };
 
 /*

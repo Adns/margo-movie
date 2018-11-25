@@ -8,7 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class BlockComponent implements OnInit {
 
   @Input()
-  title: string;
+  blockTitle: string;
 
   constructor() {
   }

@@ -7,9 +7,10 @@ import {PicturesComponent} from './pictures/pictures.component';
 import {ViewRoutingModule} from './view-routing.module';
 import { SeasonDetailComponent } from './season-detail/season-detail.component';
 import { EpisodeComponent } from './episode/episode.component';
+import { CommentsComponent } from './comments/comments.component';
 
 @NgModule({
-  declarations: [MovieFullComponent, ShowFullComponent, PicturesComponent, SeasonDetailComponent, EpisodeComponent],
+  declarations: [MovieFullComponent, ShowFullComponent, PicturesComponent, SeasonDetailComponent, EpisodeComponent, CommentsComponent],
   imports: [
     CommonModule,
     SharedModule,

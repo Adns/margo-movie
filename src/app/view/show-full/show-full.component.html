@@ -19,11 +19,15 @@
   </div>
   </app-block>
 
-  <app-block title="Season Details" *ngIf="episodes"  class="margin-block">
+  <app-block [blockTitle]="'Season Details'" *ngIf="episodes"  class="margin-block">
     <app-season-detail [episodes]="episodes" (episodeWatched)="watchEpisode($event)"></app-season-detail>
   </app-block>
 
-  <app-block title="Pictures" class="margin-block">
+  <app-block [blockTitle]="'Pictures'" class="margin-block">
     <app-pictures [id]="show.id"></app-pictures>
+  </app-block>
+
+  <app-block [blockTitle]="'Comments'" class="margin-block">
+    <app-comments [id]="show.id" [type]="'show'"></app-comments>
   </app-block>
 </ng-container>

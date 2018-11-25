@@ -40,6 +40,11 @@
       max-height: 150px;
       overflow-y: auto;
     }
+
+    .watched {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 }
 
