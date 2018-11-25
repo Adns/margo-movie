@@ -1,0 +1,28 @@
+@import 'common';
+
+:host {
+  align-items: center;
+  display: flex;
+  margin: 10px;
+  width: 100%;
+
+  .icon {
+    cursor: pointer;
+    margin-right: 15px;
+  }
+
+  .code {
+    color: $blue-margo;
+    font-weight: bold;
+    margin-right: 15px;
+  }
+
+  .name {
+    flex: 1;
+    margin-right: 15px;
+  }
+
+  .date {
+    font-style: italic;
+  }
+}

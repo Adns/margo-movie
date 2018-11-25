@@ -13,12 +13,17 @@
       <div class="status"><span class="key">Status: </span>{{show.status}}</div>
       <div class="seasons"><span class="key">Seasons </span>{{show.seasons}}, <span class="key">Episodes: </span>{{show.episodes}}
       </div>
+      <div class="watched"><span margoLabel *ngFor="let episode of watchedEpisodes">{{episode}}</span></div>
       <div class="resume">{{show.resume}}</div>
     </div>
   </div>
   </app-block>
 
-  <app-block title="Pictures" class="pictures">
+  <app-block title="Season Details" *ngIf="episodes"  class="margin-block">
+    <app-season-detail [episodes]="episodes" (episodeWatched)="watchEpisode($event)"></app-season-detail>
+  </app-block>
+
+  <app-block title="Pictures" class="margin-block">
     <app-pictures [id]="show.id"></app-pictures>
   </app-block>
 </ng-container>

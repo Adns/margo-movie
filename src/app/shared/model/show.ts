@@ -18,7 +18,6 @@ export class Show extends Media {
   episodes: number;
   network: string;
   status: string;
-  seasonDetail: Season[];
 
   constructor() {
     super();
@@ -26,14 +25,12 @@ export class Show extends Media {
     this.episodes = null;
     this.network = null;
     this.status = null;
-    this.seasonDetail = null;
   }
 
   deserialize(input: Show): this {
     super.deserialize(input);
     this.poster = input['images'].poster || input['images'].show;
     this.resume = input['description'];
-    this.seasonDetail = input['seasons_details'];
 
     return this;
   }
@@ -45,9 +42,4 @@ export class Show extends Media {
   getIconType(): string {
     return 'tv';
   }
-}
-
-export class Season {
-  number: number;
-  episodes: number;
 }

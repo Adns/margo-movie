@@ -1,0 +1,6 @@
+<div class="season" *ngFor="let item of seasonDetails | keyvalue">
+  <div class="title">Season {{item.key}}</div>
+  <div class="episodes">
+    <app-episode *ngFor="let episode of item.value" [episode]="episode" (episodeWatched)="watchEpisode($event)"></app-episode>
+  </div>
+</div>

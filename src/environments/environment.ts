@@ -19,6 +19,9 @@ export const environment = {
   user: {
     movies: 'movies/random',
     shows: 'shows/random'
+  },
+  episode: {
+    shows: 'shows/episodes'
   }
 };
 
