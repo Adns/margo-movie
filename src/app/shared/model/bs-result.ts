@@ -1,9 +1,5 @@
 export class BsResult {
   errors: Error[];
-
-  constructor(obj?: any) {
-    Object.assign(this, obj);
-  }
 }
 
 export class Error {

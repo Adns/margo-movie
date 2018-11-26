@@ -11,7 +11,7 @@ export class HttpInterceptorService implements HttpInterceptor {
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
     const request = req.clone({
       setHeaders: {
-        'X-BetaSeries-Key': 'f93c137ff1b0'
+        'X-BetaSeries-Key': 'dca6069dbd33'
       }
     });
     return next.handle(request);

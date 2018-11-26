@@ -1,7 +1,5 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {MovieComponent} from './movie/movie.component';
-import {ShowComponent} from './show/show.component';
 import {LabelDirective} from './directives/label.directive';
 import {ButtonDirective} from './directives/button.directive';
 import {MediaComponent} from './media/media.component';
@@ -14,8 +12,6 @@ import {NoteComponent} from './note/note.component';
 
 @NgModule({
   declarations: [
-    MovieComponent,
-    ShowComponent,
     LabelDirective,
     ButtonDirective,
     MediaComponent,
@@ -26,8 +22,6 @@ import {NoteComponent} from './note/note.component';
     NoteComponent
   ],
   exports: [
-    MovieComponent,
-    ShowComponent,
     LabelDirective,
     ButtonDirective,
     MediaComponent,
